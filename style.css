@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,700;1,400&display=swap');
+:root {
+     --Cyan: hsl(179, 62%, 43%);
+     --BrightYellow: hsl(71, 73%, 54%);    
+     --LightGray: hsl(204, 43%, 93%);
+     --GrayishBlue: hsl(218, 22%, 67%);
+}
+
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+body {
+      font-size: 16px;
+      font-family: 'karla', sans-serif;
+      background-color: var(--LightGray);
+}
+
+.container {
+      padding: 20px;
+      margin: 1.25em; 
+      border-radius: 0.625rem;
+}
+
+.card {
+     padding: 30px;
+}
+.join {
+      background-color: white;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+}
+
+.join h1 {
+      margin-bottom: 20px;
+      color: var(--GrayishBlue);
+      font-size: 1.5em;
+}
+
+.join h2 {
+      color: var(--BrightYellow);
+      font-size: 1.3em;
+      margin-bottom: 20px;
+}
+
+.join p {
+      line-height: 2;
+      color: var(--GrayishBlue);
+      font-size: 1em;
+}
+
+.subscription {
+      background-color: var(--Cyan);
+}
+
+.subscription h1 {
+     margin-bottom: 20px;
+     color: var(--LightGray);
+     font-size: 1.5em;
+}
+
+.subscription h2 {
+      color: var(--LightGray);
+      font-size: 2em;
+}
+.subscription span {
+      font-size: .6em;
+      margin-left: .5em;
+      opacity: 0.5;
+      position: relative;
+      bottom: 4px;
+}
+
+.subscription h3 {
+      margin-top: 10px;
+      color: var(--LightGray);
+}
+
+.btn2 {
+      background-color: var(--BrightYellow);
+      color: white;
+      border: none;
+      margin-top: 30px;
+      padding: 20px;
+      border-radius: 10px;
+      font-size: 1em;
+      font-weight: bold;
+      width: 100%;
+      cursor: pointer;
+      transition: opacity 0.4s ease-in-out;
+}
+
+.btn2:hover {
+      opacity: 0.5;
+}
+
+/* hsl(179, 62%, 43%); */
+.why-us {
+      background-color: hsl(175, 62%, 46%);
+      border-bottom-left-radius: 0.625rem;
+      border-bottom-right-radius: 0.625rem;
+}
+
+.why-us h1 {
+     margin-bottom: 20px;
+     color: var(--LightGray);
+     font-size: 1.5em;
+}
+
+.why-us ul {
+     list-style-type: none;
+     color: var(--LightGray);
+     line-height: 1.6;
+     
+}
+
+
+.attribution { font-size: 15px; text-align: center;   }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+@media (min-width: 768px) {
+          body {
+                display: flex;
+                align-items: center;
+                justify-content: center;    
+               min-height: 100vh;
+          }
+          .container {
+                width: 700px;
+                margin: auto;
+          }
+       .all {
+             display: flex;
+             flex-direction: row;
+       }
+       .subscription {
+             flex: 1;
+             border-bottom-left-radius: 0.625rem;
+       }
+       .why-us {
+             flex: 1;
+             border-bottom-right-radius: 0.625rem;
+             border-bottom-left-radius: 0;
+       }
+     .attribution {
+          position: absolute;
+          bottom: 1rem;
+          left: 38%;
+     }      
+       
+}
